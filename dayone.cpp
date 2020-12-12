@@ -3,10 +3,10 @@
 
 int main()
 {
-    const int desired_sum = 2020; 
-    std::vector<int> inputs(0); 
+    const int desired_sum = 2020;
+    std::vector<int> inputs(0);
 
-    int input; 
+    int input;
 
     while (std::cin >> input)
     {
@@ -17,12 +17,12 @@ int main()
 
     std::cout << "Part One" << std::endl;
 
-    for (int i = 0; i < len; i++) 
+    for (int i = 0; i < len; i++)
     {
-        int first = inputs.at(i); 
-        for (int j = i + 1; j < len; j++) 
+        int first = inputs.at(i);
+        for (int j = i + 1; j < len; j++)
         {
-            int second = inputs.at(j); 
+            int second = inputs.at(j);
             if (first + second == desired_sum)
             {
                 std::cout << first * second << std::endl;
@@ -32,12 +32,12 @@ int main()
 
     std::cout << "Part Two" << std::endl;
 
-    for (int i = 0; i < len; i++) 
+    for (int i = 0; i < len; i++)
     {
-        int first = inputs.at(i); 
-        for (int j = i + 1; j < len; j++) 
+        int first = inputs.at(i);
+        for (int j = i + 1; j < len; j++)
         {
-            int second = inputs.at(j); 
+            int second = inputs.at(j);
             for (int k = j + 1; k < len; k++)
             {
                 int third = inputs.at(k);
@@ -46,8 +46,6 @@ int main()
                     std::cout << first * second * third << std::endl;
                 }
             }
-            
         }
     }
-
 }
