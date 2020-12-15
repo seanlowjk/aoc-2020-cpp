@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
-#include <algorithm>
+
 #include <iostream>
 #include <vector>
-#include <string>
 #include <set>
 
 std::pair<std::vector<std::string>, std::vector<std::string>> get_headers(char *&input)
